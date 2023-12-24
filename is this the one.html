@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALL ABOUT ME</title>
+    <style>
+        details {
+            cursor: pointer;
+        }
+        details > p {
+            display: none;
+        }
+        details[open] > p {
+            display: block;
+        }
+    </style><style>
+    body {
+        background-color: hsl(69, 19%, 87%);
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    details {
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    details > p {
+        display: none;
+    }
+
+    details[open] > p {
+        display: block;
+    }
+
+    img {
+        max-width: 100%; /* Ensure images don't overflow their container */
+        height: auto; /* Maintain the aspect ratio of the image */
+        margin-bottom: 20px; /* Add margin below the image */
+    }
+</style>
+
+
+</head>
+<body>
+    <h1>My Personal Page</h1>
+    
+    <img src="WhatsApp Image 2023-10-16 at 17.44.18.jpg" alt="A PICTURE OF A GIRL WEARING A WHITE SHIRT AND BLUE JEANS SMILING WITH HER ARMS SPREAD OUT">
+
+    <details>
+        <summary><h2>Biography</h2></summary>
+        <p>
+            I'm Ibifiri Graham-Jaja, and I'm 25-years-old, from Opobo town in Rivers state .Nigeria. I have a degree in petrochemical engineering with a deep passion for Software engineering. I just graduated from The University of Port Harcourt. When I'm not working or studying, I love playing video games and learning about software development. I'm on a journey to become a software developer with ALT school.
+        </p>
+    </details>
+
+    <details>
+        <summary><h2>Goals</h2></summary>
+        <p>
+            My main goal in life is to excel in my career as a software developer and make a positive impact in the industry. I also want to maintain a work-life balance while continuing to learn and grow.
+        </p>
+    </details>
+
+    <details>
+        <summary><h2>School ID</h2></summary>
+        <p>
+            Name: Ibifiri Graham-Jaja<br>Email: fayegraham3@gmail.com
+        </p>
+    </details>
+
+    <details>
+        <summary><h2>Purpose</h2></summary>
+        <p>
+            I joined ALT school because I'm passionate about technology and want to learn software development. I see great career opportunities in this field, and I enjoy problem-solving and continuous learning. This journey is about staying relevant in the ever-evolving tech world.
+        </p>
+    </details>
+
+    <details>
+        <summary><h2>SIGN UP</h2></summary>
+        <form action="submit.php" method="post">
+            Full Name: <input type="text" id="full-name" name="full-name"><br>
+            Email: <input type="email" id="email" name="email"><br>
+            Phone Number: <input type="tel" id="phone" name="phone"><br>
+            Program of Interest:
+            <select id="program" name="program">
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Cloud Engineering">Cloud Engineering</option>
+                <option value="School Of Product">School Of Product</option>
+            </select><br>
+            Date of Birth: <input type="date" id="date-of-birth" name="date-of-birth"><br>
+            <button onclick="history.back()">Back</button>
+            <input type="submit" value="Sign Up">
+        </form>
+    </details>
+</body>
+</html>
